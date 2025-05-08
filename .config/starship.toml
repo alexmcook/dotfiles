@@ -44,3 +44,10 @@ style = "yellow"
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[hostname]
+ssh_only = false
+detect_env_vars = ["SSH_CONNECTION", "WSL_DISTRO_NAME"]
+format = "[$hostname]($style)"
+style = "bold bright-black"
+trim_at = "."
